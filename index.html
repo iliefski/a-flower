@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flower Field</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div id="controlPanel">
+    <!-- Inside the controlPanel div -->
+<h2>Controls</h2>
+
+<label for="numFlowersMin">Min Number of Flowers:</label>
+<input type="range" id="numFlowersMin" min="20" max="75" value="20">
+<label for="numFlowersMax">Max Number of Flowers:</label>
+<input type="range" id="numFlowersMax" min="20" max="75" value="50">
+
+<label for="flowerScaleMin">Min Flower Scale:</label>
+<input type="range" id="flowerScaleMin" min="0.5" max="2" step="0.1" value="0.5">
+<label for="flowerScaleMax">Max Flower Scale:</label>
+<input type="range" id="flowerScaleMax" min="0.5" max="2" step="0.1" value="1.5">
+
+<label for="stemHeightMin">Min Stem Height:</label>
+<input type="range" id="stemHeightMin" min="50" max="300" value="50">
+<label for="stemHeightMax">Max Stem Height:</label>
+<input type="range" id="stemHeightMax" min="50" max="300" value="150">
+
+<label for="petalCountMin">Min Petal Count:</label>
+<input type="range" id="petalCountMin" min="5" max="20" value="5">
+<label for="petalCountMax">Max Petal Count:</label>
+<input type="range" id="petalCountMax" min="5" max="20" value="10">
+
+<label for="colorVariation">Color Variation:</label>
+<select id="colorVariation">
+  <option value="full">Full Spectrum</option>
+  <option value="mono">Monochromatic</option>
+</select>
+
+<label for="randomLeaves">Random Leaves:</label>
+<input type="checkbox" id="randomLeaves" checked>
+
+<label for="randomBend">Random Stem Bend:</label>
+<input type="checkbox" id="randomBend" checked>
+
+<!-- ... Additional controls as needed ... -->
+
+<button id="redrawButton">Redraw Flowers</button>
+
+    
+    </div>
+    <button id="toggleButton">☰</button>
+    <script src="index.js"></script>
+</body>
+</html>
